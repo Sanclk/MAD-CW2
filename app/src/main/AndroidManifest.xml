@@ -11,8 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RV_Adapter_Availability"></activity>
-        <!-- <activity android:name=".RV_Adapter_display"/> -->
+        <activity android:name=".Activity_EditProduct_List"></activity>
+        <activity android:name=".Adapter.RV_Adapter_Availability" /> <!-- <activity android:name=".RV_Adapter_display"/> -->
         <activity android:name=".Activity_Search" />
         <activity android:name=".Activity_RegisterProduct" />
         <activity android:name=".Activity_Recipes" />

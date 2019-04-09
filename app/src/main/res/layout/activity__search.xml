@@ -6,4 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".Activity_Search">
 
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="@dimen/et_margin"
+        android:text="@string/tv_title_search"
+        android:textSize="30sp"
+        android:textColor="@color/startBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="198dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginTop="250dp"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cb_availability_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="@dimen/et_margin"
+        android:background="@drawable/ic_lookup_button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_search"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

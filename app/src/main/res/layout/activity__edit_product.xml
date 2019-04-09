@@ -90,12 +90,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/et_margin"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="@dimen/et_margin"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="@+id/et_prodctDescription"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_prodctDescription">
 
         <TextView
@@ -103,9 +103,11 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/tv_availability"
+            android:textColor="@color/endBlue"
             android:textSize="20dp" />
 
         <Spinner
+            android:id="@+id/spnAvailability"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 

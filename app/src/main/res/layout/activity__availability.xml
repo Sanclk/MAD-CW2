@@ -15,9 +15,10 @@
         android:layout_marginTop="@dimen/et_margin"
         android:layout_marginEnd="@dimen/et_margin"
         android:layout_marginRight="@dimen/et_margin"
-        android:text="@string/txt_title_displayProduct"
+        android:text="@string/tv_title_available_products"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/endBlue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,6 +48,8 @@
         android:layout_marginBottom="@dimen/et_margin"
         android:onClick="SaveInKitchen"
         android:text="@string/btn_txt_save"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/btnTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

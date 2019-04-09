@@ -21,4 +21,11 @@
     <string name="txt_title_displayProduct">Display Product</string>
     <string name="btn_txt_add_to_kitchen">Add to Kitchen</string>
     <string name="btn_txt_save">SAVE</string>
+    <string name="tv_title_available_products">Available Products</string>
+    <string name="tv_title_search">SEARCH</string>
+
+    <string-array name="spnAvailability">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
 </resources>
