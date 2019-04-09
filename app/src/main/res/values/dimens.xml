@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_txt_size">25dp</dimen>
+    <dimen name="btn_txt_size">18sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="et_margin">8dp</dimen>
+</resources>

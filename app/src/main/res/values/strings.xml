@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Kitchen Inventory Manager</string>
+    <string name="et_hint_ProductName">Product Name</string>
+    <string name="et_hint_Weight">Weight</string>
+    <string name="tv_txt_registerProduct">Register Product</string>
+    <string name="et_hint_price">Price</string>
+    <string name="et_hint_description">Description</string>
+    <string name="btn_txt_Register">REGISTER</string>
+    <string name="tv_selectoption_title">Kitchen Inventory Manager</string>
+    <string name="btn_txt_register_product">REGISTER PRODUCT</string>
+    <string name="btn_txt_display_product">DISPLAY PRODUCTS</string>
+    <string name="btn_txt_availability">AVAILABILITY</string>
+    <string name="btn_txt_edit_product">EDIT PRODUCTS</string>
+    <string name="btn_txt_search">SEARCH</string>
+    <string name="btn_txt_recipes">RECIPES</string>
+    <string name="tv_title_display_product">List of Products</string>
+    <string name="title_activity_edit_product_select">ActivityEditProductSelect</string>
+    <string name="et_edit_product">Edit Product</string>
+    <string name="btn_txt_update">UPDATE</string>
+    <string name="tv_availability">availability</string>
+    <string name="txt_title_displayProduct">Display Product</string>
+    <string name="btn_txt_add_to_kitchen">Add to Kitchen</string>
+    <string name="btn_txt_save">SAVE</string>
+</resources>

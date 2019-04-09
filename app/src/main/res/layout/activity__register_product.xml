@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_RegisterProduct">
+
+    <EditText
+        android:id="@+id/et_productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="@dimen/et_margin"
+        android:ems="10"
+        android:hint="@string/et_hint_price"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_productWeight" />
+
+    <EditText
+        android:id="@+id/et_productWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="@dimen/et_margin"
+        android:ems="10"
+        android:hint="@string/et_hint_Weight"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_productName" />
+
+    <TextView
+        android:id="@+id/tv_registerProduct_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="@dimen/et_margin"
+        android:text="@string/tv_txt_registerProduct"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_productName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="@dimen/et_margin"
+        android:ems="10"
+        android:hint="@string/et_hint_ProductName"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_registerProduct_title" />
+
+    <EditText
+        android:id="@+id/et_prodctDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="@dimen/et_margin"
+        android:ems="10"
+        android:hint="@string/et_hint_description"
+        android:inputType="textLongMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_productPrice" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="@dimen/et_margin"
+        android:layout_marginBottom="32dp"
+        android:onClick="loadRegisterProduct"
+        android:text="@string/btn_txt_Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/btnTextColor"
+        android:background="@drawable/button_shape"/>
+
+</android.support.constraint.ConstraintLayout>

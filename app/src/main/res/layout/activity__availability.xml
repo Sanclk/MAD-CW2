@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity_Availability">
+
+    <TextView
+        android:id="@+id/tv_availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="@dimen/et_margin"
+        android:text="@string/txt_title_displayProduct"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_display_availability"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginTop="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="@dimen/et_margin"
+        android:layout_marginBottom="@dimen/et_margin"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_availability" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/et_margin"
+        android:layout_marginLeft="@dimen/et_margin"
+        android:layout_marginEnd="@dimen/et_margin"
+        android:layout_marginRight="@dimen/et_margin"
+        android:layout_marginBottom="@dimen/et_margin"
+        android:onClick="SaveInKitchen"
+        android:text="@string/btn_txt_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
