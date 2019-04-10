@@ -1,28 +1,33 @@
 package westminster.sanduni.kitchenmanager;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import java.util.ArrayList;
 
-import westminster.sanduni.kitchenmanager.Adapter.RV_Adapter_editList;
+import westminster.sanduni.kitchenmanager.Adapter.RV_Adapter_edit;
 import westminster.sanduni.kitchenmanager.Model.Product;
 
 public class Activity_EditProduct_List extends AppCompatActivity {
 
+    public static Context context;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter wordListAdapter;
     private RecyclerView.LayoutManager layoutManager;
     public static ArrayList<String> productStringArrayList = new ArrayList<>();
-    public static ArrayList<String> selectedProductList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__edit_product__list);
+
+        context = getApplicationContext();
 
         addProductsToRecyclerView();
     }
@@ -41,9 +46,16 @@ public class Activity_EditProduct_List extends AppCompatActivity {
             recyclerView = findViewById(R.id.rv_edit_productlist);
             layoutManager = new LinearLayoutManager(this);
             recyclerView.setLayoutManager(layoutManager);
-            wordListAdapter = new RV_Adapter_editList(this,productStringArrayList);
+            wordListAdapter = new RV_Adapter_edit(this,productStringArrayList);
             recyclerView.setAdapter(wordListAdapter);
         }
 
+    }
+
+    private void editProductIntent(String name, int index) {
+        Intent intent = new Intent(context, Activity_EditProduct.class);
+        intent.putExtra("TitleType", name);
+        intent.putExtra("Index", index);
+        startActivity(intent);
     }
 }
