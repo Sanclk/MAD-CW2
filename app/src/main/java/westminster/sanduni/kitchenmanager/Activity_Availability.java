@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import westminster.sanduni.kitchenmanager.Adapter.RV_Adapter_availability;
 import westminster.sanduni.kitchenmanager.Model.Product;
@@ -27,10 +29,10 @@ public class Activity_Availability extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__availability);
 
-        addProductstoRecyclerView();
+        addProductsToRecyclerView();
     }
 
-    private void addProductstoRecyclerView(){
+    private void addProductsToRecyclerView(){
 
         recyclerView = findViewById(R.id.rv_display_availability);
 
@@ -41,14 +43,25 @@ public class Activity_Availability extends AppCompatActivity {
         for(Product product: MainActivity.databaseHelper.getAllProductsHandler()){
             Log.d("ArrayList","addProductsToRecyclerView: "+ product.getProd_name());
             productStringArrayList.add(product.getProd_name());
-
-            recyclerView = findViewById(R.id.rv_display_availability);
-            layoutManager = new LinearLayoutManager(this);
-            recyclerView.setLayoutManager(layoutManager);
-            wordListAdapter = new RV_Adapter_availability(this,productStringArrayList);
-            recyclerView.setAdapter(wordListAdapter);
         }
 
+        sortListByAlphabeticalOrder();
+
+        recyclerView = findViewById(R.id.rv_display_availability);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        wordListAdapter = new RV_Adapter_availability(this,productStringArrayList);
+        recyclerView.setAdapter(wordListAdapter);
+    }
+
+    //sorting the list of products in alphabetical order
+    private void sortListByAlphabeticalOrder() {
+        Collections.sort(productStringArrayList, new Comparator<String>() {
+            @Override
+            public int compare(String s1, String s2) {
+                return s1.compareToIgnoreCase(s2);
+            }
+        });
     }
 
     public void SaveInKitchen(View view) {

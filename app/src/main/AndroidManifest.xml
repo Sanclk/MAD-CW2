@@ -15,12 +15,11 @@
         <!--<activity android:name=".Adapter.RV_Adapter_Availability" /> &lt;!&ndash; <activity android:name=".RV_Adapter_display"/> &ndash;&gt;-->
         <activity android:name=".Activity_Search" />
         <activity android:name=".Activity_RegisterProduct" />
-        <activity android:name=".Activity_Recipes" />
         <activity android:name=".Activity_EditProduct" />
         <activity android:name=".Activity_DisplayProducts" />
         <activity android:name=".Activity_Availability" />
+        <activity android:name=".Activity_Recipes"/>
         <activity android:name=".Activity_RecipeList"/>
-        <activity android:name=".ListActivity"/>
         <activity android:name=".Activity_SelectOption">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

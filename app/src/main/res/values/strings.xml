@@ -23,6 +23,7 @@
     <string name="btn_txt_save">SAVE</string>
     <string name="tv_title_available_products">Available Products</string>
     <string name="tv_title_search">SEARCH</string>
+    <string name="tv_txt_title_edit">Edit Products</string>
 
     <string-array name="spnAvailability">
         <item>yes</item>

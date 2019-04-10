@@ -127,6 +127,7 @@
         android:layout_marginRight="@dimen/et_margin"
         android:layout_marginBottom="32dp"
         android:text="@string/btn_txt_update"
+        android:onClick="updateProduct"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

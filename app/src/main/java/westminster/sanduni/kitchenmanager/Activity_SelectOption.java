@@ -36,7 +36,7 @@ public class Activity_SelectOption extends AppCompatActivity {
 
     //Load edit the products activity
     public void loadEditProducts(View view){
-        Intent intent = new Intent(Activity_SelectOption.this, Activity_EditProduct.class);
+        Intent intent = new Intent(Activity_SelectOption.this, Activity_EditProduct_List.class);
         startActivity(intent);
     }
 

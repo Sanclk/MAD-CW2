@@ -45,6 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:onClick="findRecipes"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/btnTextColor"
             android:text="Find Recipes" />
     </LinearLayout>
 

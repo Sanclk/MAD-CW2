@@ -1,12 +1,10 @@
 package westminster.sanduni.kitchenmanager;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -25,7 +23,7 @@ public class Activity_EditProduct_List extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity__edit_product__list);
+        setContentView(R.layout.activity__edit_productlist);
 
         context = getApplicationContext();
 
@@ -50,12 +48,5 @@ public class Activity_EditProduct_List extends AppCompatActivity {
             recyclerView.setAdapter(wordListAdapter);
         }
 
-    }
-
-    private void editProductIntent(String name, int index) {
-        Intent intent = new Intent(context, Activity_EditProduct.class);
-        intent.putExtra("TitleType", name);
-        intent.putExtra("Index", index);
-        startActivity(intent);
     }
 }

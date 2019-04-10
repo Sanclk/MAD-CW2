@@ -1,14 +1,13 @@
 package westminster.sanduni.kitchenmanager;
 
-import android.app.ListActivity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
-public class Activity_Recipes extends AppCompatActivity implements View.OnClickListener{
+public class Activity_Recipes extends AppCompatActivity implements View.OnClickListener {
 
     private CheckBox checkChicken, checkFish, checkEgg, checkOregano;
     private String query = "";
@@ -16,7 +15,7 @@ public class Activity_Recipes extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_recipes);
 
         checkChicken = findViewById(R.id.checkChicken);
         checkFish = findViewById(R.id.checkFish);
@@ -31,7 +30,7 @@ public class Activity_Recipes extends AppCompatActivity implements View.OnClickL
 
     public void findRecipes(View view) {
         if (query.trim().length() > 0) {
-            Intent intent = new Intent(Activity_Recipes.this, ListActivity.class);
+            Intent intent = new Intent(Activity_Recipes.this, Activity_RecipeList.class);
             intent.putExtra("query", query);
             startActivity(intent);
         } else {
